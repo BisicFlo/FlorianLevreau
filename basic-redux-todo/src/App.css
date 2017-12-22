@@ -1,0 +1,176 @@
+.App {
+
+  text-align: center;
+  background: url("https://static.pexels.com/photos/220072/pexels-photo-220072.jpeg") fixed no-repeat;
+  color: rgb(250, 250, 250);
+}
+
+#header{
+  display: grid;
+  background: url("http://wallpup.com/wp-content/uploads/2013/03/Simple-Purple-Wallpaper.png") fixed no-repeat; 
+  grid-template-columns: 25% auto 25%;
+  grid-template-rows: 230px 67px;
+  justify-items: stretch;
+}
+
+#body{
+  display: grid;
+
+  grid-template-columns: 20% auto 20%;
+  grid-template-rows: 75px auto;
+  justify-items: stretch;
+
+
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+
+  height: 80px;
+  position: relative;
+  grid-column: 2;
+  grid-row: 1;
+
+
+
+}
+
+.App-header {
+
+
+  background-color: #222;
+
+  height: 280px;
+  padding: 20px;
+  color: white;
+  text-align: left;
+  background: url("http://globalmedicalco.com/photos/globalmedicalco/7/32847.jpg") fixed no-repeat; 
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+  grid-column: 2;
+  grid-row: 1;
+  display: grid;
+  grid-template-columns: auto 230px auto;
+  grid-template-rows: 230px;
+  justify-items: stretch;
+  color: rgb(250, 250, 250);
+  text-shadow: 2px 2px #ff0000;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5px;
+  /*grid-auto-rows: minmax(15px, auto);*/
+  grid-auto-rows:repeat(7, 1fr);
+
+}
+
+.one_image {
+grid-column: 1;
+grid-row: 1 / 6;
+
+text-align: left;
+
+}
+
+.one {
+grid-column: 3;
+grid-row: 1;
+
+text-align: left;
+
+}
+
+.one_two {
+grid-column: 3;
+grid-row: 2;
+
+text-align: left;
+
+}
+
+.one_three {
+grid-column: 3;
+grid-row: 3;
+
+text-align: left;
+
+}
+
+.one_four {
+grid-column: 3;
+grid-row: 4;
+
+text-align: left;
+
+}
+.one_five {
+grid-column: 3;
+grid-row: 5;
+
+text-align: left;
+
+}
+.one_six {
+grid-column: 3;
+grid-row: 6;
+
+text-align: left;
+
+}
+
+.two_one {
+grid-column: 2;
+grid-row: 1;
+text-align: right;
+
+}
+
+.two_two {
+grid-column: 2;
+grid-row: 2;
+text-align: right;
+
+}
+
+
+button{
+  font-size: 1em;
+  cursor: pointer;
+  transition: 1s;
+
+}
+
+button:hover{
+  background-color: rgb(180,180,230);
+
+}
+
+input:focus {
+  border-color: rgba(250,60,200, 1);
+  transition: border 0.4s;
+}
+
+
+
+.champ {
+
+    width:200px;
+}
+
+
+
+
+
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
